@@ -1,0 +1,106 @@
+---
+title: Docusaurus Markdown メモ
+tags: [docusaurus]
+authors: [pompopo]
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Docusaurus Markdown　メモ
+
+## Link
+[公式ドキュメント](https://docusaurus.io/docs/markdown-features)
+
+## 使いそうなもの
+
+### Tabs
+
+
+
+<Tabs>
+  <TabItem value="apple" label="Apple">
+    🍎
+  </TabItem>
+  <TabItem value="orange" label="Orange">
+    🍊
+  </TabItem>
+</Tabs>
+
+```md
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="apple" label="Apple">
+    🍎
+  </TabItem>
+  <TabItem value="orange" label="Orange">
+    🍊
+  </TabItem>
+</Tabs>
+```
+
+### Code blocks
+
+```jsx {1,4-6,11} showLineNumbers title="MyComponent.js"
+import React from 'react';
+
+function MyComponent(props) {
+  if (props.isBar) {
+    return <div>Bar</div>;
+  }
+
+  return <div>Foo</div>;
+}
+
+export default MyComponent;
+```
+
+```
+```jsx {1,4-6,11} showLineNumbers title="MyComponent.js"
+import React from 'react';
+
+function MyComponent(props) {
+  if (props.isBar) {
+    return <div>Bar</div>;
+  }
+
+  return <div>Foo</div>;
+}
+
+export default MyComponent;
+```
+
+コメントでもハイライトできる
+- `highlight-next-line`
+- `highlight-start`
+- `highlight-end`
+
+### Admonitions
+
+:::info[title]
+
+note, tip, info, warning, danger
+
+:::
+
+```
+:::info[title]
+
+note, tip, info, warning, danger
+
+:::
+```
+
+### Diagrams
+
+[Mermaid](https://mermaid.js.org/syntax/sequenceDiagram.html)が使える。
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
