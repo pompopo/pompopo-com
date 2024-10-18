@@ -6,7 +6,6 @@ const config: Config = {
   title: "pompopo.com",
   // tagline: "Dinosaurs are cool",
   favicon: "img/favicon.png",
-  image: "img/pompopo.png",
 
   // Set the production url of your site here
   url: "https://pompopo.com",
@@ -72,7 +71,8 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    // image: "img/docusaurus-social-card.jpg",
+    image: "img/pompopo.png",
+
     blog: {
       sidebar: {
         groupByYear: false,
