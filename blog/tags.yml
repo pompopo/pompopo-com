@@ -1,3 +1,6 @@
 docusaurus:
   label: Docusaurus
   description: https://docusaurus.io/
+jisui:
+  label: 自炊
+  description: 自炊レシピ
