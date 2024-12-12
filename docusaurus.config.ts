@@ -17,11 +17,6 @@ const config: Config = {
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "pompopo", // Usually your GitHub org/user name.
-  projectName: "pompopo-com", // Usually your repo name.
-
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
 
@@ -64,6 +59,9 @@ const config: Config = {
         },
         theme: {
           customCss: "./src/css/custom.css",
+        },
+        gtag: {
+          trackingID: "G-K1SMB2YEF1",
         },
       } satisfies Preset.Options,
     ],
