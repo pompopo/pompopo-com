@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import Layout from "@theme/Layout";
+import React from "react";
 const WIDTH = 80;
 const HEIGHT = 80;
 
