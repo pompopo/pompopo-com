@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  docusaurus:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: pompopo-com-dev
+    ports:
+      - "3000:3000"
+    volumes:
+      # ソースコードをマウント（ホットリロード用）
+      - .:/app
+      # node_modulesは除外（コンテナ内のものを使用）
+      - /app/node_modules
+    environment:
+      # ホットリロードを有効化
+      - CHOKIDAR_USEPOLLING=true
+      - WATCHPACK_POLLING=true
+    command: yarn start --host 0.0.0.0

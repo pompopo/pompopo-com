@@ -1,3 +1,4 @@
+import React from "react";
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
@@ -19,13 +20,13 @@ function HomepageHeader() {
   );
 }
 
-export default function Home(): JSX.Element {
+export default function Home(): React.JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout title={`${siteConfig.title}`} description="a website by @pompopo">
       <HomepageHeader />
       <main>
-        |,,˘﹏˘,,)
+        |,,˘﹏˘,,) Welcome to pompopo.com
         <ul></ul>
       </main>
     </Layout>
