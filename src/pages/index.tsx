@@ -26,7 +26,7 @@ export default function Home(): React.JSX.Element {
     <Layout title={`${siteConfig.title}`} description="a website by @pompopo">
       <HomepageHeader />
       <main>
-        |,,˘﹏˘,,)
+        |,,˘﹏˘,,) Welcome to pompopo.com
         <ul></ul>
       </main>
     </Layout>
