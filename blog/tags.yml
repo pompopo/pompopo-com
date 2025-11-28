@@ -4,3 +4,9 @@ docusaurus:
 jisui:
   label: 自炊
   description: 自炊レシピ
+steam:
+  label: Steam
+  description: Steamに関する話題
+game:
+  label: ゲーム
+  description: ゲーム全般
