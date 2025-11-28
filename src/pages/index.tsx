@@ -55,12 +55,14 @@ function HomepageFeatures(): React.JSX.Element {
               <Link
                 className="button button--secondary button--sm"
                 to="https://x.com/pompopo"
+                rel="noopener noreferrer"
               >
                 𝕏
               </Link>
               <Link
                 className="button button--secondary button--sm"
                 to="https://github.com/pompopo"
+                rel="noopener noreferrer"
               >
                 GitHub
               </Link>
