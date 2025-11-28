@@ -109,13 +109,17 @@ const config: Config = {
           title: "Links",
           items: [
             {
-              label: "𝕏",
-              to: "https://x.com/pompopo",
+              label: "mixi2",
+              to: "https://mixi.social/@pompopo",
             },
             {
               label: "GitHub",
               to: "https://github.com/pompopo",
+            }, {
+              label: "𝕏",
+              to: "https://x.com/pompopo",
             },
+
           ],
         },
       ],

@@ -29,35 +29,21 @@ function HomepageFeatures(): React.JSX.Element {
           <div className={styles.featureCard}>
             <div className={styles.featureIcon}>📝</div>
             <h3>Blog</h3>
-            <p>技術記事や日々の寝言を書いています</p>
             <Link className="button button--primary button--lg" to="/blog">
               ブログを見る
             </Link>
           </div>
 
           <div className={styles.featureCard}>
-            <div className={styles.featureIcon}>🎮</div>
-            <h3>Life Game</h3>
-            <p>Conway's Game of Lifeで遊べます</p>
-            <Link
-              className="button button--primary button--lg"
-              to="/life-game"
-            >
-              遊んでみる
-            </Link>
-          </div>
-
-          <div className={styles.featureCard}>
             <div className={styles.featureIcon}>🐦</div>
             <h3>SNS</h3>
-            <p>SNSでも活動しています</p>
             <div className={styles.socialLinks}>
               <Link
                 className="button button--secondary button--sm"
-                to="https://x.com/pompopo"
+                to="https://mixi.social/@pompopo"
                 rel="noopener noreferrer"
               >
-                𝕏
+                mixi2
               </Link>
               <Link
                 className="button button--secondary button--sm"
@@ -66,19 +52,21 @@ function HomepageFeatures(): React.JSX.Element {
               >
                 GitHub
               </Link>
+
+              <Link
+                className="button button--secondary button--sm"
+                to="https://x.com/pompopo"
+                rel="noopener noreferrer"
+              >
+                𝕏
+              </Link>
             </div>
           </div>
         </div>
 
         <div className={styles.birdSection}>
           <p className={styles.birdAscii}>
-            　　　　　　　　🕊️
-            <br />
-            　　　　　／|,,˘﹏˘,,)＼
-            <br />
-            　　　　　　　　　　　　
-            <br />
-            　　いい感じの鳥です
+            |,,˘﹏˘,,)
           </p>
         </div>
       </div>
