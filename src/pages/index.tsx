@@ -15,8 +15,72 @@ function HomepageHeader() {
         <Heading as="h1" className="hero__title">
           |,,˘﹏˘,,)
         </Heading>
+        <p className="hero__subtitle">ようこそ pompopo.com へ</p>
       </div>
     </header>
+  );
+}
+
+function HomepageFeatures(): React.JSX.Element {
+  return (
+    <section className={styles.features}>
+      <div className="container">
+        <div className={styles.featureGrid}>
+          <div className={styles.featureCard}>
+            <div className={styles.featureIcon}>📝</div>
+            <h3>Blog</h3>
+            <p>技術記事や日々の寝言を書いています</p>
+            <Link className="button button--primary button--lg" to="/blog">
+              ブログを見る
+            </Link>
+          </div>
+
+          <div className={styles.featureCard}>
+            <div className={styles.featureIcon}>🎮</div>
+            <h3>Life Game</h3>
+            <p>Conway's Game of Lifeで遊べます</p>
+            <Link
+              className="button button--primary button--lg"
+              to="/life-game"
+            >
+              遊んでみる
+            </Link>
+          </div>
+
+          <div className={styles.featureCard}>
+            <div className={styles.featureIcon}>🐦</div>
+            <h3>SNS</h3>
+            <p>SNSでも活動しています</p>
+            <div className={styles.socialLinks}>
+              <Link
+                className="button button--secondary button--sm"
+                to="https://x.com/pompopo"
+              >
+                𝕏
+              </Link>
+              <Link
+                className="button button--secondary button--sm"
+                to="https://github.com/pompopo"
+              >
+                GitHub
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.birdSection}>
+          <p className={styles.birdAscii}>
+            　　　　　　　　🕊️
+            <br />
+            　　　　　／|,,˘﹏˘,,)＼
+            <br />
+            　　　　　　　　　　　　
+            <br />
+            　　いい感じの鳥です
+          </p>
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -26,8 +90,7 @@ export default function Home(): React.JSX.Element {
     <Layout title={`${siteConfig.title}`} description="a website by @pompopo">
       <HomepageHeader />
       <main>
-        |,,˘﹏˘,,) Welcome to pompopo.com
-        <ul></ul>
+        <HomepageFeatures />
       </main>
     </Layout>
   );
