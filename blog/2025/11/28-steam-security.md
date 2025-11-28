@@ -8,7 +8,7 @@ authors: [pompopo]
 
 <!-- truncate -->
 
-![](./img/28-steam.png.png)
+![](./img/28-steam.png)
 
 ### 状況
 
@@ -28,4 +28,4 @@ authors: [pompopo]
 4. 「ウイルスと脅威の防止」
 5. 「ウイルスと脅威の防止の設定」項目の「設定の管理」
 6. 「除外」項目の「除外の追加または削除」
-7. 「除外の追加」ファイルで、該当ゲームのパスを指定する。自分の場合はSteam版の東方地霊殿だったため、 `C:\Program Files(x86)\Steam\steamapps\common\th11\th11.exe` を指定することで無事起動できるようになった
+7. 「除外の追加」ファイルで、該当ゲームのパスを指定する。自分の場合はSteam版の東方地霊殿だったため、 `C:\Program Files (x86)\Steam\steamapps\common\th11\th11.exe` を指定することで無事起動できるようになった
